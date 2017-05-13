@@ -7,7 +7,7 @@
 
     <constant name="struts.enable.DynamicMethodInvocation" value="false" />
     <constant name="struts.devMode" value="true" />
-
+<!--
     <package name="default" namespace="/" extends="struts-default">
 
         <default-action-ref name="index" />
@@ -27,9 +27,13 @@
             </result>
         </action>
     </package>
-
-    <include file="example.xml"/>
+-->
 
     <!-- Add packages here -->
+    <package name="product" namespace="/" extends="struts-default">
+    	<action name="product_*" class="com.lxl.action.ProductAction" method="{1}">
+    		<result></result>
+    	</action>
+    </package>
 
 </struts>

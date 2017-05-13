@@ -7,7 +7,7 @@
 <title>Add Product</title>
 </head>
 <body>
-<form method="post" action="">
+<form method="post" action="product_add">
 	<table>
 		<tr>
 			<td>Product Name</td>
