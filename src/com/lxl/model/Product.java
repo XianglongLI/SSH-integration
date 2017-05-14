@@ -1,6 +1,11 @@
 package com.lxl.model;
 
+import javax.persistence.*;
+
+@Entity
 public class Product {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer pid;
 	private String pname;
 	private Double price;

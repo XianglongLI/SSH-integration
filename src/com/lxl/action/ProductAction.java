@@ -22,8 +22,7 @@ public class ProductAction extends ActionSupport implements ModelDriven<Product>
 	
 	public String add() {
 		productService.add(product);
-		System.out.println("action add");
-		return ActionSupport.NONE;
+		return ActionSupport.SUCCESS;
 	}
 
 }

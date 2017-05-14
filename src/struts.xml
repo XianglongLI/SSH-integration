@@ -32,7 +32,7 @@
     <!-- Add packages here -->
     <package name="product" namespace="/" extends="struts-default">
     	<action name="product_*" class="productAction" method="{1}">
-    		<result></result>
+    		<result>/product_add_success.jsp</result>
     	</action>
     </package>
 
