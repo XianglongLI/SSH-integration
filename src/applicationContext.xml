@@ -14,9 +14,13 @@
         http://www.springframework.org/schema/tx
         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
+	<bean id="productAction" class="com.lxl.action.ProductAction">
+		<property name="productService" ref="productService" />
+	</bean>
+
 	<bean id="productDao" class="com.lxl.dao.ProductDao"></bean>
 	
 	<bean id="productService" class="com.lxl.service.ProductService">
-		<property name="productDao" ref="productDao"></property>
+		<property name="productDao" ref="productDao" />
 	</bean>
 </beans>
